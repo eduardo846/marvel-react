@@ -15,6 +15,7 @@ export default function useFetch(url, options) {
       } catch (err) {
         setError(err);
         setLoading(false);
+        console.log("este e sun erroro");
       }
     })();
   }, [options, url]);
